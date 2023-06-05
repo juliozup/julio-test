@@ -1,0 +1,24 @@
+schema-version: v1
+kind: manifest
+metadata:
+  name: teste-1234-julio
+  description: teste
+  starter: cli-qa-studio/stack-de-teste/starter-137v1
+  stack-version-id: 01H1YQZHRCCCQ70QAP7XDRMKG2
+  stack: stack-de-teste
+spec:
+  type: app
+  app-id: 01H263X6Q98BZ3MDZ9MXW2Q77Z
+  plugins:
+    - name: cli-qa-studio/stack-de-teste/plugin137@0.0.1
+      plugin-version-id: 01H1YR556HKQNJB2CN7R4Z5ZXY
+      stack-version-id: 01H1YQZHRCCCQ70QAP7XDRMKG2
+      type: app
+      inputs:
+        resource: Client
+        method: GET
+      inputs-envs: {}
+      connectors: []
+  global-inputs: {}
+  global-computed-inputs: {}
+  repository: https://github.com/juliozup/julio-test
