@@ -1,0 +1,25 @@
+schema-version: v1
+kind: manifest
+metadata:
+  name: app-137-v2
+  description: '137 - Run action quebrando o workflows quando um input possui aspas
+    simples '
+  starter: cli-qa-studio/stack-de-teste/starter-137v1
+  stack-version-id: 01H1YQZHRCCCQ70QAP7XDRMKG2
+  stack: stack-de-teste
+spec:
+  type: app
+  app-id: 01H25Y6MSYZ9W8EFW35P6ST59J
+  plugins:
+    - name: cli-qa-studio/stack-de-teste/plugin137@0.0.1
+      plugin-version-id: 01H1YR556HKQNJB2CN7R4Z5ZXY
+      stack-version-id: 01H1YQZHRCCCQ70QAP7XDRMKG2
+      type: app
+      inputs:
+        resource: Client
+        method: GET
+      inputs-envs: {}
+      connectors: []
+  global-inputs: {}
+  global-computed-inputs: {}
+  repository: https://github.com/juliozup/julio-test
